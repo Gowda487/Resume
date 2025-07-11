@@ -7,7 +7,7 @@ toggleBtn.addEventListener('click', () => {
 
 // Typing animation
 const typed = new Typed('#typed', {
-  strings: ['Web Developer', 'Open Source Contributor', 'Tech Enthusiast'],
+  strings: ['Web Developer',  'Tech Enthusiast'],
   typeSpeed: 50,
   backSpeed: 30,
   loop: true
