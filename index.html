@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhuvan M - Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Bhuvan M</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" data-aos="fade-up">
+    <div class="hero-text">
+      <h1>Hi, I'm <span class="highlight">Bhuvan M</span></h1>
+      <h2><span id="typed"></span></h2>
+      <p>Passionate about building dynamic and smart digital experiences.</p>
+    </div>
+    <div class="hero-img">
+      <img src="images/photo1.jpg" alt="Bhuvan">
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="card-grid">
+      <div class="glass-card">HTML / CSS</div>
+      <div class="glass-card">JavaScript / React</div>
+      <div class="glass-card">Python / C++</div>
+      <div class="glass-card">Firebase / Git</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/photo2.jpg" alt="Project 1">
+        <div class="card-content">
+          <h3>Smart Highlighter</h3>
+          <p>OCR tool with Google Drive integration.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/photo3.jpg" alt="Project 2">
+        <div class="card-content">
+          <h3>Katha Manjari</h3>
+          <p>Spin-based storytelling web app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section" data-aos="fade-left">
+    <h2>Contact</h2>
+    <p>Email: bhuvan@example.com</p>
+    <p>GitHub: github.com/bhuvanm</p>
+    <p>LinkedIn: linkedin.com/in/bhuvanm</p>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
