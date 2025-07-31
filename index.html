@@ -6,6 +6,7 @@
   <title>Bhuvan M - Portfolio</title>
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 
 </head>
 <body>
@@ -68,12 +69,32 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section" data-aos="fade-left">
-    <h2>Contact</h2>
-    <p>Email: bhuvan@example.com</p>
-    <p>GitHub: github.com/bhuvanm</p>
-    <p>LinkedIn: linkedin.com/in/bhuvanm</p>
-  </section>
+<section id="contact" class="section contact-section" data-aos="fade-left">
+  <h2>Contact</h2>
+
+  <div class="contact-container">
+     <form id="contact-form">
+    <input type="text" name="user_name" placeholder="Your Name" required />
+    <input type="email" name="user_email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+    <p id="form-status"></p>
+  </form>
+  </div>
+
+
+    <div class="contact-info glass-card">
+      <p><strong>Email:</strong> bhuvanmbhuvanm15@gmail.com</p>
+      <p><strong>Phone:</strong> +91-9876543210</p>
+      <p><strong>Location:</strong> Bengaluru, India</p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/bhuvanm" target="_blank">🔗 LinkedIn</a>
+        <a href="mailto:bhuvanmbhuvanm15@gmail.com">✉️ Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
