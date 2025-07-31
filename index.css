@@ -24,11 +24,16 @@ body.dark {
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  margin: 0;
+  padding: 0;
+  color: #1f2937;
+  background: linear-gradient(-45deg, #dd079d, #6405bd, #0416b6, #cff2fb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   transition: background 0.3s, color 0.3s;
   scroll-behavior: smooth;
 }
+
 
 a {
   color: var(--accent);
@@ -270,5 +275,17 @@ img {
 
   .nav-links {
     display: none;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
