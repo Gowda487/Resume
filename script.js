@@ -9,12 +9,6 @@ const typed = new Typed("#typed", {
 // AOS
 AOS.init();
 
-// Theme toggle
-const toggleBtn = document.getElementById("theme-toggle");
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
-});
 
 
 emailjs.init("MJEoLTV0GtTkbfuLf"); // from EmailJS dashboard
@@ -29,3 +23,16 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
       alert("Failed to send message: " + error.text);
     });
 });
+
+// ==== Mouse Parallax Effect for Blobs ====
+document.addEventListener("mousemove", (e) => {
+  const blobs = document.querySelectorAll(".blob");
+  blobs.forEach((blob, index) => {
+    const speed = 0.02 * (index + 1);
+    const x = (window.innerWidth / 2 - e.clientX) * speed;
+    const y = (window.innerHeight / 2 - e.clientY) * speed;
+    blob.style.transform += ` translate(${x}px, ${y}px)`;
+  });
+});
+ 
+
