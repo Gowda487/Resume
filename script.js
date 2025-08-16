@@ -36,3 +36,15 @@ document.addEventListener("mousemove", (e) => {
 });
  
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const intro = document.getElementById("intro");
+  const hero = document.querySelector(".hero");
+
+  // Wait for intro animation, then show hero
+  intro.addEventListener("animationend", () => {
+    intro.style.display = "none"; // hide intro
+    hero.classList.add("show");   // animate hero in
+  });
+});
