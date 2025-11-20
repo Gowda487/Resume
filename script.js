@@ -1,10 +1,3 @@
-// Typed.js
-const typed = new Typed("#typed", {
-  strings: ["Web Developer", "Problem Solver", "Tech Enthusiast"],
-  typeSpeed: 70,
-  backSpeed: 40,
-  loop: true
-});
 
 // AOS
 AOS.init();
@@ -24,27 +17,3 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     });
 });
 
-// ==== Mouse Parallax Effect for Blobs ====
-document.addEventListener("mousemove", (e) => {
-  const blobs = document.querySelectorAll(".blob");
-  blobs.forEach((blob, index) => {
-    const speed = 0.02 * (index + 1);
-    const x = (window.innerWidth / 2 - e.clientX) * speed;
-    const y = (window.innerHeight / 2 - e.clientY) * speed;
-    blob.style.transform += ` translate(${x}px, ${y}px)`;
-  });
-});
- 
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const intro = document.getElementById("intro");
-  const hero = document.querySelector(".hero");
-
-  // Wait for intro animation, then show hero
-  intro.addEventListener("animationend", () => {
-    intro.style.display = "none"; // hide intro
-    hero.classList.add("show");   // animate hero in
-  });
-});
